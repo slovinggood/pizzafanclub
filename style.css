@@ -1,0 +1,152 @@
+/*body { 
+    background-image: url('pizzafan.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50%; 
+    background-size:50%;
+    background-color:white;
+}*/
+
+html,body {
+    font-size:100%;
+    background-color:#77bb13;
+    height:100%;
+    min-height:100%;
+    margin:0;
+    padding:0;
+}
+
+.wrappa {
+    height:100%;
+    width:100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('img/pizzaz.jpg');
+    background-position: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0em;
+    padding:0em;
+}
+
+img.pizzafan {
+	position: absolute;
+	max-width: 70%;
+	top: 10%;
+	left: 10%;
+
+}
+
+
+img.pizzafan:empty {
+	top: 50%;
+	left: 50%;
+	min-height:40%;
+	max-height:70%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+
+}
+
+/*
+.wrappa {
+    margin: 0;
+    -webkit-animation: spinner 20s;
+    animation: spinner 20s;
+    animation-iteration-count:infinte;
+    -webkit-animation-iteration-count:infinite;
+    
+}
+
+@keyframes spinner {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+
+@-webkit-keyframes spinner {
+    0% {-webkit-transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);}
+}
+*/
+img.eye {
+	-webkit-animation: eyes 5s; /* Chrome, Safari, Opera */
+    animation: eyes 5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes eyes {
+    0%   {top:50%;}
+    25%  {top:49%;}
+    50%  {top:51%;}
+    100% {top:50%;}
+}
+
+@-webkit-keyframes eyes {
+    0%   {top:50%;}
+    25%  {top:49%;}
+    50%  {top:51%;}
+    100% {top:50%;}
+}
+
+img.eye2 {
+	-webkit-animation: eyese 4s; /* Chrome, Safari, Opera */
+    animation: eyese 4s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+
+}
+
+@keyframes eyese {
+    0%   {top:50%;}
+    25%  {top:51%;}
+    50%  {top:49%;}
+    100% {top:50%;}
+}
+
+@-webkit-keyframes eyese {
+    0%   {top:50%;}
+    25%  {top:51%;}
+    50%  {top:49%;}
+    100% {top:50%;}
+}
+
+img.mouth {
+	-webkit-animation: mouthe 4s; /* Chrome, Safari, Opera */
+    animation: mouthe 4s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+
+
+}
+
+@keyframes mouthe {
+    0%   {left:50.5%;}
+    25%  {left:51%;}
+    50%  {left:50%;}
+    100% {left:50.5%;}
+}
+
+@-webkit-keyframes mouthe {
+    0%   {left:50.5%;}
+    25%  {left:51%;}
+    50%  {left:50%;}
+    100% {left:50.5%;}
+}
+
+img.title {
+      animation: blink .5s steps(5, start) infinite;
+      -webkit-animation: blink .5s steps(5, start) infinite;
+}
+
+@keyframes blink {
+      to {
+        visibility: hidden;
+      }
+}
+@-webkit-keyframes blink {
+      to {
+        visibility: hidden;
+}
+    }
